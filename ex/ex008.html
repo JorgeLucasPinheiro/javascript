@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embaixada</title>
+</head>
+<body>
+    <h1>Em qual pais você mora?</h1>
+    Digite aqui: <input type="text" name="txtpi" id="txtpi">
+    <input type="button" value="verificar" onclick="calcular()">
+    
+    <div id="res"></div>
+    <script>
+        function calcular(){
+            var pais = document.getElementById('txtpi')
+            var res = document.getElementById('res')
+            var origem = String(pais.value)
+            res.innerHTML = 'Você mora no'+ pais
+            if (origem == 'Brasil'){
+                res.innerHTML = '<p>Você é <strong>Brasileiro</strong></p>'
+            } 
+            else {
+                res.innerHTML = '<p>Você não é <strong>Brasileiro</strong></p>'
+            }
+            
+        }
+    </script>
+</body>
+</html>
