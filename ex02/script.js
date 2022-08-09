@@ -1,7 +1,7 @@
 function carregar() {
   var msg = document.getElementById('msg')
   var img = document.getElementById('foto')
-  var fnd = document.querySelector('.fundo')
+  //var fnd = document.querySelector('.fundo')
   var data = new Date()
   var hora = data.getHours()
   var minutos = data.getMinutes()
@@ -10,15 +10,15 @@ function carregar() {
   if (hora >= 0 && hora < 12) {
     //bom dia
     img.innerHTML = '<img src = "manha.png">'
-    fnd.style.background = 'yellow'
-    fnd.style.color = 'gray'
+    document.body.style.background = '#e2cd9f'
+    document.body.style.color = 'gray'
   } else if (hora >= 12 && hora <= 18) {
     //Boa tarde
     img.innerHTML = '<img src = "tarde.png">'
-    fnd.style.background = 'rgb(206, 92, 4)'
+    document.body.style.background = '#b9846f'
   } else {
     //Boa Noite
     img.innerHTML = '<img src = "noite.png">'
-    fnd.style.background = 'darkblue'
+    document.body.style.background = '#515154'
   }
 }
