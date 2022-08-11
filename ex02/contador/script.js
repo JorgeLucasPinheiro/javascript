@@ -4,7 +4,7 @@ function verificar(){
     var passo = document.getElementById('txtpasso')
     var resultado = document.getElementById('res')
     
-    if (inicio.value.lenght == 0 || fim.value.lenght == 0 || passo.value.lenght == 0){
+    if (inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0){
         window.alert('[ERRO]')
         resultado.innerHTML = 'Impossivel Contar'
     } else {
